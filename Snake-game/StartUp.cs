@@ -31,7 +31,14 @@ namespace Snake_game
                 }
                 catch (ArgumentOutOfRangeException)
                 {
-                    board.GameOver(snake);
+                    var resetGame = board.GameOver(snake);
+
+                    if (resetGame)
+                    {
+                        Console.Clear();
+                        Main(null);
+                    }
+
                     Environment.Exit(0);
                 }
                 

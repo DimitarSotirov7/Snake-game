@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YR7hfGG0nOCQR5qeYJJe8v97JAVTfPQMi12kspq3vlni2VYZcExz+Z3SBgMN21kkjKUDYw8UTSHmzDsCE78s4g==",
+  "dgSpecHash": "AwT0FqEPKIsQ7MaokaItSJI4W/SoD6ZooYv1LxKssXNbWR8ac//FitOrmddVa3ZwLrM4DPoY1iSnWKVqYW2aTg==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Others\\Snake-game\\Snake-game\\Snake-game.csproj",
+  "projectFilePath": "D:\\SoftUni-Courses\\C#-Projects\\Others\\Snake-game\\Snake-game\\Snake-game.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

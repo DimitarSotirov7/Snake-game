@@ -5,7 +5,6 @@ namespace Snake_game
     class Directions
     {
         private bool started = false;
-        private bool paused = false;
 
         private Position right;
         private Position left;
@@ -50,6 +49,10 @@ namespace Snake_game
                     this.CurrentDirection = this.down;
                     this.PreviousDirection = this.down;
                 }
+                else if (userInput.Key.Equals(ConsoleKey.P))
+                {
+                    Paused();
+                }
             }
 
             this.started = true;
@@ -57,26 +60,25 @@ namespace Snake_game
             return this.CurrentDirection;
         }
 
-        //public bool Paused()
-        //{
-        //    if (Console.KeyAvailable)
-        //    {
-        //        ConsoleKeyInfo userInput = Console.ReadKey();
+        public void Paused()
+        {
+            Console.Clear();
 
-        //        if (userInput.Key.Equals(ConsoleKey.P))
-        //        {
-        //            if (this.paused)
-        //            {
-        //                paused = false;
-        //            }
-        //            else
-        //            {
-        //                paused = true;
-        //            }
-        //        }
-        //    }
+            string welcomeMessage = "Game is paused! Press [P] to continue.";
+            int left = (Console.BufferWidth / 2) - (welcomeMessage.Length / 2);
+            int top = Console.BufferHeight / 2;
+            Console.SetCursorPosition(left, top);
+            Console.Write(welcomeMessage);
 
-        //    return this.paused;
-        //}
+            while (true)
+            {
+                ConsoleKeyInfo userInput = Console.ReadKey();
+
+                if (userInput.Key.Equals(ConsoleKey.P))
+                {
+                    break;
+                }
+            }
+        }
     }
 }

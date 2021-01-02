@@ -11,3 +11,16 @@ D:\Projects\Others\Snake-game\Snake-game\obj\Debug\netcoreapp3.1\Snake-game.Asse
 D:\Projects\Others\Snake-game\Snake-game\obj\Debug\netcoreapp3.1\Snake-game.dll
 D:\Projects\Others\Snake-game\Snake-game\obj\Debug\netcoreapp3.1\Snake-game.pdb
 D:\Projects\Others\Snake-game\Snake-game\obj\Debug\netcoreapp3.1\Snake-game.genruntimeconfig.cache
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\bin\Debug\netcoreapp3.1\Snake-game.exe
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\bin\Debug\netcoreapp3.1\Snake-game.deps.json
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\bin\Debug\netcoreapp3.1\Snake-game.runtimeconfig.json
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\bin\Debug\netcoreapp3.1\Snake-game.runtimeconfig.dev.json
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\bin\Debug\netcoreapp3.1\Snake-game.dll
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\bin\Debug\netcoreapp3.1\Snake-game.pdb
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\netcoreapp3.1\Snake-game.csprojAssemblyReference.cache
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\netcoreapp3.1\Snake-game.AssemblyInfoInputs.cache
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\netcoreapp3.1\Snake-game.AssemblyInfo.cs
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\netcoreapp3.1\Snake-game.csproj.CoreCompileInputs.cache
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\netcoreapp3.1\Snake-game.dll
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\netcoreapp3.1\Snake-game.pdb
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\netcoreapp3.1\Snake-game.genruntimeconfig.cache

@@ -54,7 +54,7 @@ namespace Snake_game
 
         public void StartPage()
         {
-            string welcomeMessage = "Welcome to my Snake Game. Press \"Enter\" to continue.";
+            string welcomeMessage = "Welcome to my Snake Game. Press [Enter] to continue.";
 
             int left = (Console.BufferWidth / 2) - (welcomeMessage.Length / 2);
             int top = Console.BufferHeight / 2;
@@ -74,14 +74,16 @@ namespace Snake_game
             }
         }
 
-        public void GameOver(Snake snake)
+        public bool GameOver(Snake snake)
         {
             Console.Clear();
 
             Console.SetCursorPosition(0, 0);
             Console.WriteLine("Game Over!");
             Console.WriteLine($"Your points: {snake.Points}");
-            Console.WriteLine($"Press \"Esc\" to close");
+            Console.WriteLine($"Press [Esc] to close or [R] to reset game.");
+
+            var resetGame = false;
 
             while (true)
             {
@@ -91,7 +93,15 @@ namespace Snake_game
                 {
                     break;
                 }
+
+                if (pressedKey.Key.Equals(ConsoleKey.R))
+                {
+                    resetGame = true;
+                    break;
+                }
             }
+
+            return resetGame;
         }
     }
 }
