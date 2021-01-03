@@ -53,6 +53,10 @@ namespace Snake_game
                 {
                     Paused();
                 }
+                else if (userInput.Key.Equals(ConsoleKey.R))
+                {
+                    return new Position(-1, -1);
+                }
             }
 
             this.started = true;

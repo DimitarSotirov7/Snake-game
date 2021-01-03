@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Snake_game
 {
@@ -11,6 +12,8 @@ namespace Snake_game
 
         public Board()
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+
             Console.BufferHeight = Console.WindowHeight;
 
             Console.BufferHeight = DefaultHeight;
@@ -26,7 +29,7 @@ namespace Snake_game
             Console.BufferWidth = width;
         }
 
-        public char Food { get; private set; } = '@';
+        public char Food { get; private set; } = '©';
 
         public Position[] FoodPositions { get; private set; }
 
@@ -54,13 +57,22 @@ namespace Snake_game
 
         public void StartPage()
         {
-            string welcomeMessage = "Welcome to my Snake Game. Press [Enter] to continue.";
+            string welcomeMessage = "Welcome to my Snake Game.";
 
             int left = (Console.BufferWidth / 2) - (welcomeMessage.Length / 2);
-            int top = Console.BufferHeight / 2;
-
+            int top = Console.BufferHeight / 2 - 4;
             Console.SetCursorPosition(left, top);
             Console.Write(welcomeMessage);
+
+            string startMessage = "Press [Enter] to continue.";
+
+            Console.SetCursorPosition(left, top + 2);
+            Console.Write(startMessage);
+
+            string resetMessage = "Tap [R] to reset game.";
+
+            Console.SetCursorPosition(left, top + 4);
+            Console.Write(resetMessage);
 
             while (true)
             {

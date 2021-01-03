@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace Snake_game
 {
-    class StartUp
+    public class StartUp
     {
         static void Main(string[] args)
         {
@@ -27,7 +27,15 @@ namespace Snake_game
                         Console.Write(snake.Symbol);
                     }
 
-                    snake.Moving(direction.setNextDirection(), board.FoodPositions);
+                    var nextDirection = direction.setNextDirection();
+
+                    if (nextDirection.Row == -1 && nextDirection.Col == -1)
+                    {
+                        Console.Clear();
+                        Main(null);
+                    }
+
+                    snake.Moving(nextDirection, board.FoodPositions);
                 }
                 catch (ArgumentOutOfRangeException)
                 {
