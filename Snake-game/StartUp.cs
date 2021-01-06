@@ -8,7 +8,13 @@ namespace Snake_game
         static void Main(string[] args)
         {
             Board board = new Board();
-            board.StartPage();
+            bool restart = board.StartPage();
+
+            if (restart)
+            {
+                Main(null);
+            }
+
             board.GenerateFood();
 
             Position position = new Position();
@@ -39,9 +45,7 @@ namespace Snake_game
                 }
                 catch (ArgumentOutOfRangeException)
                 {
-                    var resetGame = board.GameOver(snake);
-
-                    if (resetGame)
+                    if (board.GameOver(snake))
                     {
                         Console.Clear();
                         Main(null);

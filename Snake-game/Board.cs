@@ -8,11 +8,12 @@ namespace Snake_game
         private const int DefaultHeight = 30;
         private const int DefaultWidth = 120;
 
-        private const int DefaultFoods = 5;
+        private const int DefaultFoods = 10;
 
         public Board()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.OutputEncoding = Encoding.Unicode;
 
             Console.BufferHeight = Console.WindowHeight;
 
@@ -55,47 +56,41 @@ namespace Snake_game
             }
         }
 
-        public void StartPage()
+        public bool StartPage()
         {
-            string welcomeMessage = "Welcome to my Snake Game.";
-
-            int left = (Console.BufferWidth / 2) - (welcomeMessage.Length / 2);
-            int top = Console.BufferHeight / 2 - 4;
-            Console.SetCursorPosition(left, top);
-            Console.Write(welcomeMessage);
-
-            string startMessage = "Press [Enter] to continue.";
-
-            Console.SetCursorPosition(left, top + 2);
-            Console.Write(startMessage);
-
-            string resetMessage = "Tap [R] to reset game.";
-
-            Console.SetCursorPosition(left, top + 4);
-            Console.Write(resetMessage);
+            PrintMessageInMiddle("Welcome to my Snake Game.");
+            PrintMessageInMiddle("Press [Enter] to continue.", 2);
+            PrintMessageInMiddle("Tap [R] at any time when you want to reset the game.", 4);
 
             while (true)
             {
-                ConsoleKeyInfo pressedKey = Console.ReadKey();
+                ConsoleKeyInfo pressedKey = Console.ReadKey(false);
 
                 if (pressedKey.Key.Equals(ConsoleKey.Enter))
                 {
                     Console.Clear();
-                    break;
+                    Console.Beep(1000, 3);
+                    return false;
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.Beep(1000, 3);
+                    return true;
                 }
             }
         }
 
         public bool GameOver(Snake snake)
         {
+            Console.Beep(1500, 30);
             Console.Clear();
 
-            Console.SetCursorPosition(0, 0);
-            Console.WriteLine("Game Over!");
-            Console.WriteLine($"Your points: {snake.Points}");
-            Console.WriteLine($"Press [Esc] to close or [R] to reset game.");
+            PrintMessageInMiddle("Game Over!");
+            PrintMessageInMiddle($"Your points: {snake.Points}", 2);
+            PrintMessageInMiddle($"Press [Esc] to close or [R] to reset game.", 4);
 
-            var resetGame = false;
+            bool restart = false;
 
             while (true)
             {
@@ -105,15 +100,23 @@ namespace Snake_game
                 {
                     break;
                 }
-
-                if (pressedKey.Key.Equals(ConsoleKey.R))
+                else if (pressedKey.Key.Equals(ConsoleKey.R))
                 {
-                    resetGame = true;
+                    restart = true;
                     break;
                 }
             }
 
-            return resetGame;
+            Console.Beep(1000, 3);
+            return restart;
+        }
+
+        private void PrintMessageInMiddle(string message, int topRows = 0)
+        {
+            int left = (Console.BufferWidth / 2) - (message.Length / 2);
+            int top = Console.BufferHeight / 2 - 4 + topRows;
+            Console.SetCursorPosition(left, top);
+            Console.Write(message);
         }
     }
 }

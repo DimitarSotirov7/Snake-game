@@ -61,6 +61,7 @@ namespace Snake_game
             else
             {
                 this.Points++;
+                Console.Beep(1000, 3);
             }
         }
 
@@ -96,7 +97,5 @@ namespace Snake_game
 
             return false;
         }
-
-        
     }
 }
