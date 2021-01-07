@@ -15,6 +15,8 @@ namespace Snake_game
                 Main(null);
             }
 
+            string level = board.GameLevel;
+
             board.GenerateFood();
 
             Position position = new Position();
@@ -22,6 +24,10 @@ namespace Snake_game
             snake.InitializeSnake(position);
 
             Directions direction = new Directions();
+
+            int[] speedLevels = Speed.GetLevelSpeed(level);
+            int startSpeed = speedLevels[0];
+            int endSpeed = speedLevels[1];
 
             while (true)
             {
@@ -56,9 +62,8 @@ namespace Snake_game
                 
                 board.SetFood();
 
-                int speedOfSnake = (snake.Points * 5) > 50 ? 50 : (snake.Points * 5);
-
-                Thread.Sleep(100 - speedOfSnake);
+                int speedOfSnake = startSpeed - (snake.Points * 2) < endSpeed ? endSpeed : startSpeed - (snake.Points * 2);
+                Thread.Sleep(speedOfSnake);
                 Console.Clear();
             }
         }

@@ -1,0 +1,16 @@
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\bin\Debug\net5.0\Snake-game.exe
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\bin\Debug\net5.0\Snake-game.deps.json
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\bin\Debug\net5.0\Snake-game.runtimeconfig.json
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\bin\Debug\net5.0\Snake-game.runtimeconfig.dev.json
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\bin\Debug\net5.0\Snake-game.dll
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\bin\Debug\net5.0\ref\Snake-game.dll
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\bin\Debug\net5.0\Snake-game.pdb
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\net5.0\Snake-game.csprojAssemblyReference.cache
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\net5.0\Snake-game.GeneratedMSBuildEditorConfig.editorconfig
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\net5.0\Snake-game.AssemblyInfoInputs.cache
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\net5.0\Snake-game.AssemblyInfo.cs
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\net5.0\Snake-game.csproj.CoreCompileInputs.cache
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\net5.0\Snake-game.dll
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\net5.0\ref\Snake-game.dll
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\net5.0\Snake-game.pdb
+D:\SoftUni-Courses\C#-Projects\Others\Snake-game\Snake-game\obj\Debug\net5.0\Snake-game.genruntimeconfig.cache

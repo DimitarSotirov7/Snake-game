@@ -19,9 +19,9 @@ namespace Snake_game
             this.down = new Position(0, 1);
         }
 
-        private Position CurrentDirection { get; set; }
+        private Position CurrentDirection { get; set; } = new Position(1, 0);
 
-        private Position PreviousDirection { get; set; }
+        private Position PreviousDirection { get; set; } = new Position(1, 0);
 
         public Position setNextDirection()
         {
